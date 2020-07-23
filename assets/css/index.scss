@@ -105,8 +105,10 @@ body {
   }
 }
 
-.column-reverse {
-  flex-direction: column-reverse !important;
+.column-reverse-mobile {
+  @media screen and(max-width: $phone) {
+    flex-direction: column-reverse !important;
+  }
 }
 
 

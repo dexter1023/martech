@@ -2,7 +2,7 @@
   <footer>
     <div class="content__layer p-t-60 p-b-75">
       <div class="container">
-        <div class="row flex-space-between p-b-75 column-reverse">
+        <div class="row flex-space-between p-b-75 column-reverse-mobile">
           <img
             v-lazy
             src="@/assets/img/logos/love-martech-logo.svg"
