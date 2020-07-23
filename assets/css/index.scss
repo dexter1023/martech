@@ -1,0 +1,188 @@
+@import 'colors.scss';
+@import 'variables.scss';
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $dark-slate;
+  font-family: 'museo-sans-rounded', sans-serif;
+}
+
+
+/*Layout */
+.page-wrapper {
+  position: relative;
+}
+
+.container {
+  width: $page-width;
+  display: flex;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $mobile-page-width) {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+.full-width {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+}
+
+.row {
+  display: flex;
+  justify-items: center;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+
+.col {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.col-6 {
+  min-width: 50%;
+  width: 50%;
+  padding: 0 15px;
+
+  @media screen and (max-width: $mobile-page-width) {
+    width: 100%;
+  }
+}
+
+.col-3 {
+  min-width: 25%;
+  width: 25%;
+  padding: 0 15px;
+
+  @media screen and (max-width: $mobile-page-width) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: $phone) {
+    width: 100%;
+  }
+}
+
+.col-sm {
+  @media screen and (max-widyh: $phone) {
+    width: 100%;
+  }
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+
+  @media screen and(max-width: $phone) {
+    flex-wrap: wrap;
+  }
+}
+
+.flex-space-between {
+  justify-content: space-between;
+
+  @media screen and (max-width: $phone) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+
+/*Margins and paddings */
+.p-t-75 {
+  padding-top: 75px;
+
+  @media screen and(max-width: $mobile-page-width) {
+    padding-top: 35px;
+  }
+}
+
+.p-b-75 {
+  padding-bottom: 75px;
+
+  @media screen and(max-width: $mobile-page-width) {
+    padding-top: 35px;
+  }
+}
+
+.p-t-60 {
+  padding-top: 60px;
+
+  @media screen and(max-width: $mobile-page-width) {
+    padding-top: 30px;
+  }
+}
+
+.m-b-36-mobile {
+  @media screen and(max-width: $phone) {
+    margin-bottom: 36px;
+    ;
+  }
+}
+
+/* Fonts */
+a {
+  color: $white;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-gray {
+  color: #fff;
+  opacity: 0.3
+}
+
+.font-little {
+  font-size: $font-little;
+}
+
+.font-small {
+  font-size: $font-small;
+}
+
+/* Styles */
+.backghround-dark {
+  background-color: $dark-slate;
+}
+
+.content__layer {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-text-center {
+  @media screen and (max-width: $phone) {
+    text-align: center !important;
+  }
+}
+
+.filter-white {
+  filter: $filter-white;
+}
